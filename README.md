@@ -6,7 +6,7 @@ The files are:
 
 * stations.csv: Weather station by zipcode, along with lat long.
 
-* all_weather_data_split_*.csv: 2018 daily high and low temperatures for the weather stations in stations.csv. This is split into 4 files because of github's maximum file size, they should all be stitched together into one file, all_weather_data.csv.
+* all_weather_data.csv.zip: Inside the zip, 2018 daily high and low temperatures for the weather stations in stations.csv.
 
 * grab_data2.sh: The script for fetching the data in stations.csv and all_weather_data.csv. It requires an API token with NCDC. For every zip code in Gaz_zcta_national.txt, it first queries NCDC for any weather stations in that zip (stations.csv), and then if there is, queries the data for that station (all_weather_data.csv). Some shell acrobatics for converting json into csv.
 
